@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from "shared/components";
 import logo from './logo.svg';
 import './index.scss';
 
@@ -18,6 +19,7 @@ function App() {
         >
           Learn FDD
         </a>
+        <Button>Click</Button>
       </header>
     </div>
   );
