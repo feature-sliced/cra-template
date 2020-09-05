@@ -20,6 +20,9 @@ function App() {
           Learn FDD
         </a>
         <Button>Click</Button>
+        <Button outline>Click</Button>
+        <Button disabled>Click</Button>
+        <Button outline disabled>Click</Button>
       </header>
     </div>
   );

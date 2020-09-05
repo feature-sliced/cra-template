@@ -1,6 +1,43 @@
 .button {
-    
-    &.outline {
+    transition: var(--transition);
+    padding: 0 16px;
+    height: 32px;
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+    // NOTE: enable focus, if need a11y
+    outline: none;
 
+    // mode: default
+    &:not(.outline) {
+        background-color: var(--clr-primary);
+        color: var(--clr-foreground);
+        border: none;
+        &:hover {
+            background-color: var(--clr-primary--hover);
+        }
+        &:active {
+            background-color: var(--clr-primary--active);
+        }
+    }
+    // mode: outline
+    &.outline {
+        background-color: var(--clr-foreground);
+        color: var(--clr-primary);
+        border: 1px solid var(--clr-primary);
+        &:hover {
+            border-color: var(--clr-primary--hover);
+            background-color: var(--clr-primary--hover);
+            color: var(--clr-foreground);
+        }
+        &:active {
+            border-color: var(--clr-primary--active);
+            background-color: var(--clr-primary--active);
+        }
+    }
+    // :disabled
+    &:disabled {
+        --clr-primary: var(--clr-secondary);
+        pointer-events: none;
     }
 }

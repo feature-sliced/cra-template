@@ -7,17 +7,22 @@ type Props = PropsWithChildren<{
     type?: "button" | "submit" | "reset";
     title?: string;
     outline?: boolean;
+    disabled?: boolean;
     className?: string;
 }>;
 
+/**
+ * @UIKit Кнопка
+ */
 const Button = (props: Props) => {
     const {
         onClick,
         title,
         children,
         className,
+        outline,
+        disabled,
         type = "button",
-        outline = false,
     } = props;
 
     return (
@@ -26,6 +31,7 @@ const Button = (props: Props) => {
             onClick={onClick}
             title={title}
             className={cn("button", { outline }, className)}
+            disabled={disabled}
         >
             {children}
         </button>
