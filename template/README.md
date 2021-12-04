@@ -2,71 +2,47 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-> based on [Feature Driven Development approach](https://www.notion.so/Feature-Driven-Development-dfe306d664ae4780bcf999ccdd15e532)
+> based on [Feature Sliced methodology](https://feature-sliced.design/)
 
-## Структура
+## Available Scripts
 
-Ресурсы проекта структурированы согласно [Feature Driven Development](https://www.notion.so/Feature-Driven-Development-dfe306d664ae4780bcf999ccdd15e532) подходу.
+In the project directory, you can run:
 
-> **TL;DR**: Для более удобной, гибкой разработки и поддержки проекта
+### `npm start`
 
-### Структура папок
-```markdown
-└── src/                            # Исходные файлы
-    ├── app/                        # Базовые ресурсы для приложения
-    ├── features/                   # Ключевые фичи приложения
-    ├── pages/                      # Страницы приложения (собираются из features, shared)
-    └── shared/                     # **Общие** модули для разработки
-        ├── api/                    # API модуль
-        ├── components/             #   **Общеиспользуемые** React Компоненты
-        ├── helpers/                #   **Общеиспользуемые** Модули-хелперы
-        ├── hocs/                   #   **Общеиспользуемые** React HOCs
-        ├── hooks/                  #   **Общеиспользуемые** React Хуки
-        ├── fixtures/               #   **Общеиспользуемые** Демо данные (до подключения к API)
-        ├── get-env                 #   Модуль с **env**-переменными
-        ├── mixins.scss             #   **Общеиспользуемые** SCSS миксины
-        └── consts.scss             #   **Общеиспользуемые** SCSS переменные (не цвета)
-```
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### Структура фичи
-```markdown
-└── features/
-    └── feature-name/
-            ├── components/            # Компоненты, отвечающие за отображение информации (`React`, `Canvas`)
-            ├── store/                 # Redux store компонента
-            │   ├── slice.ts           #    `Slice` состояния для фичи
-            │   ├── types.ts           #    Необходимые `типы` для слайса
-            │   ├── selectors.ts       #    Мемоизированные селекторы для слайса
-            │   ├── effects.ts         #    `Thunks` с реализацией сайд эффектов (`CRUD`-операции и т.д.)
-            │   └── helpers.ts         #    Необходимые `хелперы`
-            ├── {...}/                 # Потенциально, можно хранить здесь и другие **необходимые** модули (но без фанатизма)
-            └── index.ts               # Entry-point фичи (с настроенным публичным API этой фичи)
-```
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-#### API
-Рекомендуется практика с генерацией `API`, на основе `swagger` схемы
-> Например, с помощью [openapi-generator#typescript-axios](https://openapi-generator.tech/docs/generators/typescript-axios/)
+### `npm test`
 
-#### Assets
-Рекомендуется распологать локально с каждым компонентом, что использует их.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
+### `npm run build`
 
-> Если же, возникнет **острая необходимость** иметь общие иконки, для доступа на всех уровнях приложения - то стоит их расположить как и остальные общие модули - в `shared`
-> ```markdown
-> ├── assets/
-> └── shared/
-> ```
-> Но как правило - для каждого участка интерфейса - свой уникальный набор статических файлов.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-#### Shared
-Во всех `shared/`-модулях есть файл для управления точками входа в этот модуль (`index.ts`)
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-**Рекомендуется, все необходимые подмодули получать именно через него**
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Т.е., если захочется взять общий компонент `button`, то:
-```ts
-// Плохо (т.к. идет обращение к приватному модулю)
-import Button from "shared/components/button";
-// Хорошо (регулируется общим API модуля компонентов)
-import { Button } from "shared/components";
-```
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
