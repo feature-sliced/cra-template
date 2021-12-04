@@ -1,40 +1,16 @@
 {
-  "name": "cra-template-feats",
-  "version": "1.0.3",
-  "keywords": [
-    "react",
-    "create-react-app",
-    "template",
-    "typescript"
-  ],
-  "main": "template.json",
-  "description": "The base TypeScript template for Create React App.",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/facebook/create-react-app.git",
-    "directory": "packages/cra-template-feats"
-  },
-  "license": "MIT",
-  "engines": {
-    "node": ">=10"
-  },
-  "bugs": {
-    "url": "https://github.com/facebook/create-react-app/issues"
-  },
-  "files": [
-    "template",
-    "template.json"
-  ],
   "dependencies": {
-    "@reduxjs/toolkit": "^1.4.0",
-    "classnames": "^2.2.6",
-    "react-redux": "^7.2.1",
-    "react-router-dom": "^5.2.0",
-    "redux": "^4.0.5"
-  },
-  "devDependencies": {
-    "@types/classnames": "^2.2.10",
-    "@types/react-redux": "^7.1.9",
-    "@types/react-router-dom": "^5.1.5"
+    "@testing-library/jest-dom": "^5.16.0",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "@types/jest": "^26.0.24",
+    "@types/node": "^12.20.37",
+    "@types/react": "^17.0.37",
+    "@types/react-dom": "^17.0.11",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "typescript": "^4.5.2",
+    "web-vitals": "^1.1.2"
   }
 }
