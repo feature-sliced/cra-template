@@ -1,0 +1,38 @@
+{
+  "name": "cra-template-feature-sliced-typescript",
+  "version": "1.0.0",
+  "keywords": [
+    "effector",
+    "react",
+    "create-react-app",
+    "cra",
+    "template",
+    "typescript"
+  ],
+  "description": "Feature sliced template",
+  "main": "template.json",
+  "license": "MIT",
+  "scripts": {
+    "start": "react-scripts start"
+  },
+  "files": [
+    "template",
+    "template.json"
+  ],
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "clsx": "^1.1.1",
+    "react-router-dom": "^6.0.2"
+  }
+}

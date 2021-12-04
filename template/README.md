@@ -2,8 +2,6 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-> based on [Feature Sliced methodology](https://feature-sliced.design/)
-
 ## Available Scripts
 
 In the project directory, you can run:
