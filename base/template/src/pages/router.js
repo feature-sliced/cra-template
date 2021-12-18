@@ -1,9 +1,9 @@
 import { routeNames } from 'shared/router';
-import { CounterPage } from './counter-page';
+import { Counter } from './counter';
 
 export const publicRoutes = [
   {
     path: routeNames.COUNTER,
-    Component: CounterPage,
+    Component: Counter,
   },
 ];

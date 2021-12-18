@@ -6,10 +6,21 @@
     "create-react-app",
     "cra",
     "template",
-    "typescript"
+    "typescript",
+    "feature-sliced",
+    "feature-based",
+    "feature-slices"
   ],
   "description": "Feature sliced typescript template",
   "main": "template.json",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/feature-sliced/cra-template.git",
+    "directory": "base"
+  },
+  "bugs": {
+    "url": "https://github.com/feature-sliced/cra-template/issues"
+  },
   "license": "MIT",
   "scripts": {
     "start": "react-scripts start",

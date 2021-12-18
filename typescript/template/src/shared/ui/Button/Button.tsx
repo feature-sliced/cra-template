@@ -1,11 +1,19 @@
-import React, { FC, ButtonHTMLAttributes } from 'react';
-import clsx from 'clsx';
-import styles from './Button.module.css';
+import React, { FC, MouseEventHandler } from 'react';
+import styles from './button.module.css';
 
-export const Button: FC<ButtonHTMLAttributes<HTMLButtonElement>> = (props) => {
+interface Props {
+  className?: string;
+  onClick?: MouseEventHandler<HTMLButtonElement>;
+}
+
+export const Button: FC<Props> = ({ className, children, onClick }) => {
   return (
-    <button {...props} className={clsx(styles.button, props.className)}>
-      {props.children}
+    <button
+      onClick={onClick}
+      className={`${styles.button} ${className ? className : ''}`}
+      // instead of this className defining you can use clsx/classnames or any other lib
+    >
+      {children}
     </button>
   );
 };

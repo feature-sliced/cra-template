@@ -1,6 +1,6 @@
-import { routeNames } from 'shared/router';
 import { ComponentType } from 'react';
-import { CounterPage } from './counter-page';
+import { paths } from './paths';
+import { Counter } from '../counter';
 
 interface IRoute {
   path: string;
@@ -9,7 +9,7 @@ interface IRoute {
 
 export const publicRoutes: IRoute[] = [
   {
-    path: routeNames.COUNTER,
-    Component: CounterPage,
+    path: paths.COUNTER,
+    Component: Counter,
   },
 ];

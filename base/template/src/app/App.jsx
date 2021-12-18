@@ -1,6 +1,6 @@
 import { Suspense } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Loader } from 'shared/ui';
+import { Loader } from 'shared/ui/loader';
 import { publicRoutes } from 'pages/router';
 
 export const App = () => {

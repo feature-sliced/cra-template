@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { Button } from 'shared/ui';
+import { Button } from 'shared/ui/button';
 import styles from './CounterPage.module.css';
 
-export const CounterPage = () => {
+export const Counter = () => {
   const [counter, setCounter] = useState(0);
 
   return (
