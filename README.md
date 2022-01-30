@@ -1,6 +1,6 @@
 # @feature-sliced/cra-template
 
-> `WIP:` For a while - not production ready
+> `WIP:` At the moment at alpha-testing - **use carefully** (share [feedback](https://github.com/feature-sliced/cra-template/discussions/10) and [issues](https://github.com/feature-sliced/cra-template/issues))
 
 > Forked from [cra-template-typescript](https://github.com/facebook/create-react-app/tree/master/packages/cra-template-typescript)
 

@@ -1,5 +1,7 @@
 # [@feature-sliced/cra-tempalte](https://www.npmjs.com/package/@feature-sliced/cra-template)
 
+> `WIP:` At the moment at alpha-testing - **use carefully** (share [feedback](https://github.com/feature-sliced/cra-template/discussions/10) and [issues](https://github.com/feature-sliced/cra-template/issues))
+
 <img src="https://avatars.githubusercontent.com/u/60469024?s=120&v=4" align="right">
 
 This is the official template for [Create React App](https://github.com/facebook/create-react-app) based on [Feature Sliced Design](https://feature-sliced.design/).
