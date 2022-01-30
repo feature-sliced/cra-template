@@ -1,6 +1,6 @@
 {
   "name": "cra-template-feature-sliced",
-  "version": "1.0.0",
+  "version": "0.0.1-concept",
   "keywords": [
     "react",
     "create-react-app",
@@ -10,7 +10,7 @@
     "feature-based",
     "feature-slices"
   ],
-  "description": "Feature sliced base template",
+  "description": "The official FeatureSliced template for Create React app",
   "main": "template.json",
   "repository": {
     "type": "git",
