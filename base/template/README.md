@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Getting Started with Create React App with [feature-sliced](https://feature-sliced.design) structural methodology
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

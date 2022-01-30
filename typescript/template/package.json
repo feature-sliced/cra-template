@@ -1,0 +1,47 @@
+{
+  "name": "cra-template-feature-sliced-typescript",
+  "version": "0.0.1",
+  "keywords": [
+    "react",
+    "create-react-app",
+    "cra",
+    "template",
+    "typescript",
+    "feature-sliced",
+    "feature-based",
+    "feature-slices"
+  ],
+  "description": "The official FeatureSliced template for Create React app",
+  "main": "template.json",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/feature-sliced/cra-template.git",
+    "directory": "base"
+  },
+  "bugs": {
+    "url": "https://github.com/feature-sliced/cra-template/issues"
+  },
+  "license": "MIT",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "files": [
+    "template",
+    "template.json"
+  ],
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
