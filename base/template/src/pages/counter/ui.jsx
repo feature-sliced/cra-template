@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Button } from 'shared/ui/button';
 import { useCounter } from './model';
 import styles from './styles.module.css';
