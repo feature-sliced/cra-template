@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button } from 'shared/ui/button';
 import { useCounter } from './model';
-import styles from './ui.module.css';
+import styles from './styles.module.css';
 
 export const CounterPage = () => {
   const { counter, increment, decrement } = useCounter(0);

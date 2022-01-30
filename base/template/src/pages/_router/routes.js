@@ -1,5 +1,5 @@
-import { paths } from './paths';
 import { CounterPage } from '../counter';
+import { paths } from './paths';
 
 export const publicRoutes = [
   {

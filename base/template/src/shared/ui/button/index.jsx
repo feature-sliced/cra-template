@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { connectClassnames } from 'shared/lib/dom';
-import styles from './button.module.css';
+import styles from './styles.module.css';
 
 export const Button = ({ className, children, onClick }) => {
   return (
