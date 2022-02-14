@@ -1,5 +1,7 @@
 # CRA Template with typescript
 
+> WARN: Not yet ready! Prefer https://www.npmjs.com/package/@feature-sliced/cra-template
+
 To use this template, add `--template feature-sliced-typescript` when creating a new app.
 
 `npm:`
