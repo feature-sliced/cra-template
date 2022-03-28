@@ -1,21 +1,19 @@
-import { useState } from 'react';
+import React from 'react';
 import { Button } from 'shared/ui/button';
-import styles from './ui.module.css';
+import { useCounter } from './model';
+import styles from './styles.module.css';
 
-export const CounterPage = () => {
-  const [counter, setCounter] = useState(0);
+export const CounterPage: React.FC = () => {
+  const { counter, increment, decrement } = useCounter(0);
 
   return (
     <div>
       <h1>Counter {counter}</h1>
 
-      <Button
-        className={styles.incrementButton}
-        onClick={() => setCounter((prev) => prev + 1)}
-      >
+      <Button className={styles.incrementButton} onClick={increment}>
         increment
       </Button>
-      <Button onClick={() => setCounter((prev) => prev - 1)}>decrement</Button>
+      <Button onClick={decrement}>decrement</Button>
     </div>
   );
 };
